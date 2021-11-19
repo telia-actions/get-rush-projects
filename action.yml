@@ -1,0 +1,13 @@
+name: Get rush projects
+description: Get rush projects from rush.json
+inputs:
+  rushJsonPath:
+    description: Path to a valid rush json file.
+    required: false
+    default: './rush.json'
+outputs:
+  rushProjects:
+    description: Every rush project in rush.json
+runs:
+  using: node12
+  main: dist/index.js
